@@ -118,17 +118,19 @@ font-size: 1.5em;
  #fruit_project img, #planets_project img, #hackathon_project img {
     max-width: 380px;
     float: none;
-    margin: 5%;
+    margin-left: 5%;
+    margin-top: 10%;
 }
 
 .projects_cta {
     padding: 10px 30px;
     margin: 30%;
-
-
 }
 
 /*Footer*/
+footer{
+  margin-top: 10%;
+}
 #my_email{
   margin-top: 25%;  
 }
