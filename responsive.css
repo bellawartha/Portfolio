@@ -76,7 +76,7 @@ font-size: 1.5em;
     }
 
     header nav ul {
-        justify-content:space-around;
+        justify-content:space-between;
     }
 
     header nav ul li a {
@@ -118,7 +118,7 @@ font-size: 1.5em;
  #fruit_project img, #planets_project img, #hackathon_project img {
     max-width: 380px;
     float: none;
-    margin: 8%;
+    margin: 5%;
 }
 
 .projects_cta {
