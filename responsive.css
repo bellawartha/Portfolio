@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+@media screen and (min-width: 650px ) and (max-width: 950px) {
+    
+ /*Header*/
+
+ header h1 {
+    font-size: 1.8em;
+}
+
+header nav ul li a {
+    margin: 20px;
+}
+
+/*Introdução*/
+
+.introduction_info,.project_info {
+width: 90%;
+margin: 5%;
+text-align: justify;
+}  
+
+#introduction_img{
+float: none;
+margin: 20%;
+padding-bottom: 0%;
+}
+#introduction_title {
+    padding-top: 15%;
+ }
+
+#introduction_img img {
+border-radius: 400px;
+max-height: 350px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Projetos*/
+
+#fruit_project img, #planets_project img, #hackathon_project img {
+max-width: 500px;
+float: none;
+margin: 14%;
+}
+
+.projects_cta {
+padding: 10px 30px;
+margin: 35%;
+}
+
+/*Footer*/
+
+footer img {
+width: 40px;
+margin: auto;
+}
+.information_footer{
+margin: auto;
+}
+
+address h2 {
+margin: auto;
+font-size: 1.5em;
+}
+}
+
+@media screen and (max-width: 650px) {
+
+  /*Header*/
+
+    header h1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 5%;
+    }
+
+    header nav ul {
+        justify-content:space-around;
+    }
+
+    header nav ul li a {
+        margin: 20px;
+    }
+
+  /*Introdução*/
+
+  .introduction_info,.project_info {
+    width: 90%;
+    margin: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+   }
+
+   #introduction_title {
+    padding-top: 30%;
+    font-size: 2.5em;
+ }
+
+   #introduction_img{
+    float: none;
+    margin: 20%;
+    padding-bottom: 0%;
+ }
+ 
+ #introduction_img img {
+   border-radius: 400px;
+   max-height: 260px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ #intro_subtitle{
+    font-size: 1.3em;
+ }
+
+ /*Projetos*/
+
+ #fruit_project img, #planets_project img, #hackathon_project img {
+    max-width: 380px;
+    float: none;
+    margin: 8%;
+}
+
+.projects_cta {
+    padding: 10px 30px;
+    margin: 30%;
+
+
+}
+
+/*Footer*/
+#my_email{
+  margin-top: 25%;  
+}
+
+footer img {
+    width: 40px;  
+    margin-right: 0.5%;
+    margin-top: 20%;
+}
+
+address h2 {
+display: none;
+}
+
+}
+
+
+

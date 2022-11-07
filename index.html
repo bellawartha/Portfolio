@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="responsive.css">
+    <title>Portfólio</title>
 </head>
 <body>
     
@@ -15,29 +17,113 @@
                 <h1>Olá,<span></span></h1>
                 <h1>meu nome é<span></span></h1>
                 <h1>Isabella Wartha <span></span></h1>
-                <nav><a href="#" type="button" class="cta">Portifólio</a></nav>
+                <nav><a href="#introduction_page" type="button" class="cta">Veja aqui meu Portifólio</a></nav>
             </div>
         </div>
      </section>
 
-     <section id="portfolio">
+     <header>
+            <h1 id="my_name">Isabella Wartha</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduction_page">Sobre mim</a></li>
+                    <li><a href="#projects_page">Projetos</a></li>
+                    <li><a href="#contact_page">Contato</a></li>
+                </ul>
+            </nav>
+      </header>
 
-        <div class="portfolio container">
-            <header id="portfolio header">
-            <h1 class="section title"><span>Portifólio</span></h1>
-            </header>
+     <section id="introduction_page">
+        <div>
+            <h1 id="introduction_title">Seja bem vindx!</h1>
         </div>
 
-        <div class="allprojects">
-            <div class="project_item">
-                <div class="project_info">
-                    
+        <picture id="introduction_img">
+            <img src="./images/perfil (2).jpg" alt="foto de perfil da autora da página">
+        </picture>
+
+        <div class="text" id="introduction_text">
+            <div>
+                
+                <h2 class="introduction_info" id="intro_subtitle">Meu nome é Isabella e sou uma Web Developer</h2>
+                <p class="introduction_info" id="intro_text">Sou brasiliense e amo aprender novas coisas e me desafiar. Sempre estou procurando aprender sobre novas tecnologias e linguagens. Sou formada em Museologia e atualmente estou fazendo o curso de Análise e Desenvolvimento de Sistemas. A museologia me trouxe muitos conhecimentos sobre gestão e na tecnologia tenho conhecimentos em UX Design, HTML, CSS e Javascript. Também tenho noções de SQL e NodeJs. </p>
+                 
+            </div>  
+        </div>
+     </section>
+
+        <p id="projects_page"><br><br></p>
+        <section >
+            <article>
+                    <picture id="fruit_project">
+                        <img   src="./images/Projects/Site das frutas.png" alt="">
+                    </picture>
+                <div>
+                    <div>
+                        <h2 class="project_info">Site das frutas</h2>
+                        <p class="project_info">Esse projeto foi concebido durante as aulas do Tech Academy da Startse. Nele peguei uma base feita em uma live coding e adaptei para o tema desejado. Tive bastante preocupação com o visual da página, fazendo uma paleta de cores, escolhendo as fontes, buscando imagens que tivessem coerência entre si e com o tema. Também coloquei as referências das informações que estão no site e desenvolvi mecanismos para a responsividade. Quer ver o projeto?</p>
+                        <nav><a class="project_info projects_cta" target="_blank" type="button" href="https://bellawartha.github.io/Site-das-Frutas/">clique aqui</a></nav>
+                    </div>
+                </div>
+            </article>
+        </section>
+            
+    <section>
+        <article>
+                <picture id="planets_project">
+                    <img   src="./images/Projects/Site dos planetas.png" alt="">
+                </picture>
+            <div>
+                <div>
+                    <h2 class="project_info">Site dos planetas</h2>
+                    <p class="project_info">Esse projeto foi concebido durante as aulas do Tech Academy da Startse. Neste, assim como no anterior, peguei uma base feita em uma live coding e adaptei para o tema desejado. Muito parecido com o projeto do Site das Frutas, neste há apenas uma adição de elementos na primeira página após a apresentação.  Quer ver o projeto?</p>
+                    <nav><a class="project_info projects_cta" target="_blank" type="button" href="https://bellawartha.github.io/Site-dos-planetas/">clique aqui</a></nav>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+                <picture id="hackathon_project">
+                    <img   src="./images/Projects/Hackathon.png" alt="">
+                </picture>
+                <div>
+                    <div>
+                        <h2 class="project_info">Hackathon - IoTruck</h2>
+                        <p class="project_info">Esse projeto foi concebido durante o Hackathon do Tech Academy da Startse. Fui designada para uma equipe que deveria resolver um problema de Logística de Transporte. Criamos o IoTruck um sistema de rastreamento de carga através da tecnologia IOT. Fiquei com a parte mais visual do site, ajudando a definir a paleta de cores, fontes, logo, layout e trabalhando no front end. Quer saber mais sobre o projeto?</p>
+                        <nav><a class="project_info projects_cta" target="_blank" type="button" href="https://github.com/ViFMarques/Hackathon-StartSe">clique aqui</a></nav>
+                   </div>
+                </div>
+        </article>
+    </section>
+    
+     <footer id="contact_page">
+        <div class = "container_footer">
+            <div class="information_footer">
+                <address id="contact_footer">
+                    <h2>Contato</h2>
+                   
+                </address>
+
+                <div>
+                        <h3 id="my_email">Email: isabella.wartha@gmail.com</h3>  
                 </div>
 
-            </div>
+                <address id="social_network_footer">
+                    <h2>Minhas redes</h2>
+                </address>
 
+                <div>
+                        <a class="social_network_icons" target="_blank" href="https://www.linkedin.com/in/isabella-wartha-0292a61ab/"><img src="./images/Icons/Linkedin(1).png" alt="Ícone linkedin"></a>
+                        <a class="social_network_icons" target="_blank" href="https://github.com/bellawartha"><img src="./images/Icons/Github(1).png" alt="Ícone Github"></a>
+                </div>
+            </div>
         </div>
-     </section>
+    </footer>
+
+
+
 
 </body>
 </html>
