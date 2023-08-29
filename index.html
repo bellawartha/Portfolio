@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images_/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style_/style.css">
+    <link rel="stylesheet" href="./style_/responsive.css">
+    <link rel="stylesheet" href="./style_/dark.css">
+    <title>Portfólio</title>
+</head>
+
+<body>
+
+    <section id="presentation">
+        <div class="presentation container">
+            <div>
+                <h1>Olá,<span></span></h1>
+                <h1>meu nome é<span></span></h1>
+                <h1>Isabella Wartha <span></span></h1>
+                <nav><a href="#introduction_page" type="button" class="cta">Veja aqui meu Portfólio</a></nav>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="tema">
+            <button onclick="mudaTema()" class="btn">
+                Alterar tema
+            </button>
+        </div>
+
+        <h1 id="my_name">Isabella Wartha</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction_page">Sobre mim</a></li>
+                <li><a href="#projects_page">Projetos</a></li>
+                <li><a href="#contact_page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="introduction_page">
+
+        <div class="intro_title">
+            <h1 id="introduction_title">Seja bem vindx!</h1>
+        </div>
+
+
+        <picture id="introduction_img">
+            <img src="./images_/perfil (2).jpg" alt="foto de perfil da autora da página">
+        </picture>
+
+        <div class="text">
+            <h2 class="introduction_info" id="intro_subtitle">Meu nome é Isabella e sou uma desenvolvedora</h2>
+            <p class="introduction_info intro_text">Sou uma brasiliense curiosa e apaixonada por desafios.
+                Adoro explorar o mundo e aprender novas coisas, especialmente quando se trata de tecnologia.
+                Atualmente, estou expandindo meus conhecimentos com o curso de Análise e Desenvolvimento de
+                Sistemas, o que me deixa ainda mais animada para seguir uma carreira nessa área.</p>
+            <p class="introduction_info intro_text">
+                <br> Minha graduação em Museologia me proporcionou conhecimentos valiosos em gestão e administração
+                de empresas, habilidades que eu acredito serem cruciais para um profissional de tecnologia. Além
+                disso, já adquiri conhecimentos em GIT, HTML, CSS, Javascript, mySQL, NodeJs, Java, tenho noções de
+                UX, e
+                estou estudando Angular.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="projects_page" class="projects">
+
+        <article class="project_container">
+            <picture class="project_img">
+                <img src="./images_/projects_/hackathon.png" alt="">
+            </picture>
+
+            <div class="box_infos">
+                <div>
+                    <h2 class="project_info">Hackathon - IoTruck</h2>
+                    <p class="project_info">Este projeto foi desenvolvido durante o Hackathon do Tech Academy da
+                        Startse, no qual a equipe foi desafiada a encontrar uma solução para problemas de Logística de
+                        Transporte. O resultado foi o IoTruck, um sistema de rastreamento de carga que utiliza
+                        tecnologia IoT. Quer saber mais sobre o projeto?</p>
+                </div>
+
+                <nav>
+                    <a class="project_info projects_cta" target="_blank" type="button"
+                        href="https://github.com/ViFMarques/Hackathon-StartSe">clique aqui</a>
+                </nav>
+            </div>
+        </article>
+
+        <article class="project_container">
+            <picture class="project_img">
+                <img src="./images_/projects_/to_do_list.png" alt="">
+            </picture>
+
+            <div class="box_infos">
+                <div>
+                    <h2 class="project_info">Lista de Tarefas</h2>
+                    <p class="project_info">O projeto foi inspirado em exercícios realizados durante o Tech Academy. Ele
+                        permite criar uma lista de tarefas, cada tarefa pode ser marcadacomo concluída, desmarcada e
+                        removida. Também há a possibilidade de remover todas as tarefas, marcar e desmarcar todas. Quer
+                        ver o projeto?</p>
+                </div>
+
+                <nav>
+                    <a class="project_info projects_cta" target="_blank" type="button"
+                        href="https://bellawartha.github.io/Lista-de-tarefas/">clique aqui</a>
+                </nav>
+            </div>
+        </article>
+
+        <article class="project_container">
+            <picture class="project_img">
+                <img src="./images_/projects_/divisor_de_contas.png" alt="">
+            </picture>
+
+            <div class="box_infos">
+                <div>
+                    <h2 class="project_info">Divisor de contas</h2>
+                    <p class="project_info">Este projeto foi desenvolvido para um teste de código. Ele permite dividir
+                        uma conta entre várias pessoas, contando com adição de itens individuais e itens compartilhados.
+                        Quer ver o projeto?</p>
+                </div>
+
+                <nav>
+                    <a class="project_info projects_cta" target="_blank" type="button"
+                        href="https://bellawartha.github.io/DivisorDeContas/">clique aqui</a>
+                </nav>
+            </div>
+        </article>
+
+        <article class="project_container">
+            <picture class="project_img">
+                <img src="./images_/projects_/hagman_game.png" alt="">
+            </picture>
+
+            <div class="box_infos">
+                <div>
+                    <h2 class="project_info">Jogo da forca: Edição Países</h2>
+                    <p class="project_info">Este projeto foi desenvolvido em dupla durante as aulas do Santander Coders.
+                        É um jogo da forca simples onde você pode testar suas habilidades geográficas ao adivinhar o
+                        nome de um país selecionado aleatoriamente relacionado a uma região e nível de dificuldade
+                        escolhidos. Quer ver o projeto?</p>
+                </div>
+
+                <nav>
+                    <a class="project_info projects_cta" target="_blank" type="button"
+                        href="https://code-neves.github.io/Paises-Santader-Coders/">clique aqui</a>
+                </nav>
+            </div>
+        </article>
+
+
+    </section>
+
+    <section id="container_more">
+        <div id="more_projects">
+            <div>
+                <h2>Quer ver mais projetos?</h2>
+            </div>
+            <nav>
+                <a class="projects_cta" target="_blank" type="button"
+                    href="https://github.com/bellawartha?tab=repositories">clique aqui</a>
+            </nav>
+        </div>
+    </section>
+
+    <footer id="contact_page">
+        <div class="container_footer">
+            <div class="information_footer">
+
+                <address id="social_network_footer">
+                    <h2>Minhas redes</h2>
+
+                </address>
+
+                <div>
+                    <h3 id="my_email">isabella.wartha@gmail.com</h3>
+                </div>
+
+                <div>
+                    <a class="social_network_icons" target="_blank"
+                        href="https://www.linkedin.com/in/isabella-wartha-0292a61ab/"><img
+                            src="./images_/icons_/Linkedin.png" alt="Ícone linkedin"></a>
+                    <a class="social_network_icons" target="_blank" href="https://github.com/bellawartha"><img
+                            src="./images_/icons_/Github.png" alt="Ícone Github"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>

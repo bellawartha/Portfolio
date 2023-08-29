@@ -1,0 +1,48 @@
+/*Seção de apresentação*/
+
+.dark #presentation {
+  background-image: url(../images_/presentation_/pexels-mathias-reding-11774159.jpg);
+
+}
+
+/*Header*/
+.dark header {
+  background-color: black;
+}
+
+.dark header h1, .dark header nav ul li a  {
+  color: #db8b02;
+}
+
+header nav ul li a:hover, .dark .btn:hover {
+  color: antiquewhite;
+}
+
+/*Introdução*/
+.dark #introduction_page {
+  background-image: url(../images_/introduction_/pexels-mathias-reding-11774186.jpg);
+}
+
+.dark #introduction_page::after {
+  background-color: black;
+}
+
+.dark #introduction_title, .dark #intro_subtitle, .dark .intro_text {
+  color: antiquewhite;
+}
+
+/*Projetos*/
+
+.dark .projects {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: antiquewhite;
+}
+
+/*Footer*/
+.dark footer {
+  padding-block: 30px;
+  background-color: black;
+  font-size: 0.8em;
+  color: antiquewhite;
+  margin-top: 0%;
+}

@@ -1,0 +1,362 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Seção de apresentação*/
+
+#presentation {
+    background-image: url(../images_/presentation_/pexels-cottonbro-studio-4965816.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+}
+
+#presentation h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2.5em;
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#presentation h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#presentation h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#presentation h1:nth-child(3) {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+
+#presentation .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #db8b02;
+    background-color: transparent;
+    border: 2px solid #db8b02;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    transition: .8s ease;
+    transition-property: background-color, color;
+}
+
+#presentation .cta:hover {
+    font-weight: 800;
+    color: antiquewhite;
+    background-color: #db8b02;
+}
+
+#presentation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#presentation h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: #db8b02;
+}
+
+#presentation h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+#presentation h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+/*Header*/
+header {
+    background-color: #db8b02;
+    padding: 0.8%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    margin-left: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 40px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    margin-left: 38%;
+    padding: 0.8em 1em;
+    color: black;
+    border: none;
+    background-color: #db8b02;
+}
+
+.btn:hover {
+    color: antiquewhite;
+}
+
+/*Introdução*/
+
+#introduction_page {
+    background-image: url(../images_/introduction_/pexels-cottonbro-4965829.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    padding-bottom: 15%;
+    z-index: -2;
+    display: grid;
+    gap: 5%;
+    grid-template-areas: ' .  . title . . '
+                         '. . . . .'
+                         '. . img intro_text  .';
+}
+
+#introduction_page::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    z-index: -3;
+}
+
+.intro_title { 
+    margin-top: 30%;
+    grid-area: title;
+}
+
+#introduction_title {
+    text-align: center;
+    margin: 10% 0 5% 0;
+    font-size: 3em;
+    color: black;    
+}
+
+.text {
+    grid-area: intro_text;
+}
+
+#intro_subtitle {
+    margin-top: 10%;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.intro_text {
+    text-align: justify;
+    color: black;
+}
+
+#introduction_img {
+    grid-area: img;
+}
+
+#introduction_img img {
+    border-radius: 400px;
+    max-height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*Projetos*/
+
+.projects {
+    padding: 15% 0 5% 0;
+}
+
+.project_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 10%;
+}
+
+.box_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.box_infos h2 {
+    margin-bottom: 2%;
+}
+
+.project_info {
+    text-align: justify;
+    width: 90%;
+}
+
+.project_img img {
+    max-width: 500px;
+    margin-left: 20%;
+}
+
+.projects_cta {
+    padding: 10px 30px;
+    color: antiquewhite;
+    background-color: #db8b02;
+    border: 2px solid #db8b02;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    transition: .8s ease;
+    transition-property: background-color, color;
+}
+
+.projects_cta:hover {
+    color: black;
+    background-color: antiquewhite;
+}
+
+/* More projects */
+
+#more_projects {
+    background-color: rgba(0, 0, 0, 0.842);
+    color: aliceblue;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#more_projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#more_projects nav {
+    margin-bottom: 5rem;
+}
+
+/*Footer*/
+footer {
+    padding-block: 30px;
+    background-color: #db8b02;
+    font-size: 0.8em;
+    color: black;
+}
+
+footer img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+footer .container_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.information_footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#my_email {
+    margin-top: 5%;
+}
+
+address h2 {
+    margin-left: 1em;
+    margin-top: 2.5%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+}
+
+/*Keyframes*/
+@keyframes text_reveal {
+    100% {
+        color: antiquewhite;
+    }
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: #db8b02;
+    }
+}
