@@ -160,6 +160,7 @@ header nav ul li a:hover {
 
 .btn:hover {
     color: antiquewhite;
+    cursor: pointer;
 }
 
 /*Introdução*/
